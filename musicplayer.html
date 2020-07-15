@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="./musicplayer.css">
+    <script src="https://kit.fontawesome.com/6c148ed40b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="music-player">
+
+           <!----------player-section starts------------>
+
+           <div id="player-section">
+
+                    <audio controls id="player-audio">
+                        <source src="" type="audio/mp4">
+                    </audio>
+
+                    <img src="" alt="image" id="player-image">
+
+                    <div id="time-update-shower-container">
+
+                                <div id="time-update-shower"></div>
+
+                    </div>
+
+                    <div id="control-btns-container">
+
+                                <i class="fas fa-redo-alt"></i>
+                                <i class="fas fa-redo-alt" style="display: none;color: yellow;"></i>
+                                <i class="fas fa-step-backward"></i>
+                                <i class="far fa-play-circle control-btn" id="play-btn" style="font-size: 40px;"></i>
+                                <i class="far fa-pause-circle" id="pause-btn" style="font-size: 40px;"></i>
+                                <i class="fas fa-step-forward"></i>
+                                <i class="fas fa-random"></i>
+                                <i class="fas fa-random" style="color: yellow;display: none;"></i>
+
+                    </div>
+
+                    <p id="player-title"></p>
+
+                    <p id="player-artist"></p>
+
+             </div>
+
+            <!----------player-section ends------------>
+            
+
+           <!----------list-section starts------------>
+
+            <div id="list-section"></div>
+
+            <!----------list-section ends------------>
+    
+    </div>
+
+    <script src="./musicplayer.js"></script>
+
+</body>
+</html>
